@@ -1,1 +1,1 @@
-﻿delete from dbo.AlunosPorSalas;
+﻿

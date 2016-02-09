@@ -30,6 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\EducaIBGE.XML</DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -180,12 +181,30 @@
     <Compile Include="Migrations\201601311836433_AlunosPorSala.Designer.cs">
       <DependentUpon>201601311836433_AlunosPorSala.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201602071733369_alfabetizacao.cs" />
+    <Compile Include="Migrations\201602071733369_alfabetizacao.Designer.cs">
+      <DependentUpon>201602071733369_alfabetizacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602091055532_reprovacao.cs" />
+    <Compile Include="Migrations\201602091055532_reprovacao.Designer.cs">
+      <DependentUpon>201602091055532_reprovacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602091934217_AnosDeEstudoPorIdade.cs" />
+    <Compile Include="Migrations\201602091934217_AnosDeEstudoPorIdade.Designer.cs">
+      <DependentUpon>201602091934217_AnosDeEstudoPorIdade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AlfabetizacaoPorIdade.cs" />
     <Compile Include="Models\AlunosPorSala.cs" />
+    <Compile Include="Models\AnosDeEstudoPorIdade.cs" />
+    <Compile Include="Models\DTO\AlfabetizacaoPorIdadeDTO.cs" />
     <Compile Include="Models\DTO\AlunosPorSalaDTO.cs" />
+    <Compile Include="Models\DTO\AnosDeEstudoPorIdadeDTO.cs" />
     <Compile Include="Models\DTO\ProfessoresComSuperiorDTO.cs" />
+    <Compile Include="Models\DTO\ReprovacaoPorSerieDTO.cs" />
     <Compile Include="Models\Estado.cs" />
     <Compile Include="Models\ProfComSuperiorNoAno.cs" />
+    <Compile Include="Models\ReprovacaoPorSerie.cs" />
     <Compile Include="Models\Teste.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -252,6 +271,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601311836433_AlunosPorSala.resx">
       <DependentUpon>201601311836433_AlunosPorSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602071733369_alfabetizacao.resx">
+      <DependentUpon>201602071733369_alfabetizacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602091055532_reprovacao.resx">
+      <DependentUpon>201602091055532_reprovacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602091934217_AnosDeEstudoPorIdade.resx">
+      <DependentUpon>201602091934217_AnosDeEstudoPorIdade.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

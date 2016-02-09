@@ -19,5 +19,8 @@ namespace EducaIBGE.Context
         public DbSet<ProfComSuperiorNoAno> ProfessoresComSuperior { get; set; }
         public DbSet<Estado> Estados { get; set; }
         public DbSet<AlunosPorSala> AlunosPorSala{ get; set; }
+        public DbSet<AlfabetizacaoPorIdade> TaxasDeAlfabetizacaoPorIdade { get; set; }
+        public DbSet<ReprovacaoPorSerie> ReprovacoesPorSerie{ get; set; }
+        public DbSet<AnosDeEstudoPorIdade> AnosDeEstudo{ get; set; }
     }
 }
